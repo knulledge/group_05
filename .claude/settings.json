@@ -1,0 +1,22 @@
+{
+  "model": "claude-opus-5-5",
+  "permissions": {
+    "allow": [
+      "Bash(python3 grade.py:*)",
+      "Bash(python grade.py:*)",
+      "Bash(py grade.py:*)",
+      "Bash(py -3 grade.py:*)",
+      "Read(./GUIDE.md)",
+      "Read(./CLAUDE.md)",
+      "WebSearch"
+    ],
+    "deny": [
+      "WebFetch",
+      "Read(./batches/**)",
+      "Read(./grades/**)",
+      "Edit",
+      "Write",
+      "NotebookEdit"
+    ]
+  }
+}
